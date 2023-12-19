@@ -59,19 +59,8 @@ This could refer to a specialized hardware accelerator designed to speed up arti
                   <a href="#" class="tm-tab-link" data-id="juice">Sample 3</a>
                 </li>
               </ul>
-            </nav>
+            <img src="https://github.com/sanjayengineer121/Ai_Generated_Card/blob/main/static/img/hot-americano.jpg" height="320px" width="160px">
+           
 
-            <div id="cold" class="tm-tab-content">
-              <div class="tm-list">
-                <div class="tm-list-item">          
-                  <img src="static/img/iced-americano.jpg" alt="Image" class="tm-list-item-img" width="320px" height="160px">
-                  <div class="tm-black-bg tm-list-item-text">
-                    <h3 class="tm-list-item-name"><a href="/sample1"><button type="button" class="btn btn-primary">Generate Card Sample1</button></a>
-                    </h3>
-                    <p class="tm-list-item-description">Enter Desired Details For Generate Card</p>
-                  </div>
-                </div>
                 
-                                       
-              </div>
-            </div> 
+            
