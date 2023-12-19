@@ -59,7 +59,7 @@ This could refer to a specialized hardware accelerator designed to speed up arti
                   <a href="#" class="tm-tab-link" data-id="juice">Sample 3</a>
                 </li>
               </ul>
-            <img src="https://github.com/sanjayengineer121/Ai_Generated_Card/blob/main/static/img/hot-americano.jpg" height="320px" width="160px">
+            <img src="https://github.com/sanjayengineer121/Ai_Generated_Card/blob/main/Screenshot%202023-12-19%20100945.png" height="320px" width="160px">
            
 
                 
