@@ -1,4 +1,4 @@
-from flask import Flask, render_template,json,request,redirect,url_for
+from flask import Flask, render_template,json,request,redirect,url_for,send_file
 from flask_restful import Resource, Api
 import json, string, random, os
 import flask
@@ -6,6 +6,7 @@ import webbrowser
 import sys
 
 app=Flask(__name__)
+
 
 @app.route('/')
 def homepage():
@@ -58,7 +59,6 @@ def sample1card():
 
 
     from PIL import Image, ImageDraw, ImageFont
-    import codecs
 
     # Open the image
     image = Image.open("static\sample1\My Invitation2 (21).jpeg")
@@ -144,6 +144,13 @@ def sample1card():
 
     #-----------------Close the image
     image.close()
+
+    image_path=filen
+
+    mimetype = 'image/jpeg'  
+
+    return send_file(image_path, mimetype=mimetype, as_attachment=True)
+
 
 @app.route('/sample2',methods = ['GET', 'POST'])
 def sample2():
@@ -252,14 +259,18 @@ def sample2card():
         draw.text((text_x+i, text_y), text, fill=text_color, font=font)
         
         c=c+1
-            
-        
 
     #----------------Save the modified image
     filen=f"{Mobile}&{UPI_ID}"+".jpg"
     image.save(filen)
     #-----------------Close the image
-    image.close()
+    image.close() 
+
+    image_path=filen
+
+    mimetype = 'image/jpeg'
+
+    return send_file(image_path, mimetype=mimetype, as_attachment=True)
 
 
 @app.route('/sample3',methods = ['GET', 'POST'])
@@ -367,6 +378,13 @@ def sample3card():
 
     #-----------------Close the image
     image.close()
+
+    image_path=filen
+
+    mimetype = 'image/jpeg'  
+
+    return send_file(image_path, mimetype=mimetype, as_attachment=True)
+
 
     
 app.run(debug=True)
