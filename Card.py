@@ -387,4 +387,3 @@ def sample3card():
 
 
     
-app.run(debug=True)
